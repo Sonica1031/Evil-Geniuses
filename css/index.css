@@ -1,0 +1,37 @@
+h1{
+    font-size: 70px;
+    align-self: center;
+}
+body {
+    margin: 5px;
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 150px;
+    height: 170px;
+}
+
+.registration{
+    display: none;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 200px;
+    height: 400px;
+}
+
+.buttonPlacement{
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    margin: 10px;
+    width: 200px;
+}
+
+.forum{
+    flex-direction: column;
+    justify-content: left;
+    width: 100px;
+}

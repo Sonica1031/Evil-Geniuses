@@ -1,0 +1,22 @@
+{
+    "name": "Evil Geniuses Foundation",
+    "version": "1.0",
+    "manifest_version": 3,
+    "description": "First prototype of the Evil Geniuses Foundation",
+    "action" :{
+        "default_icon": "EFGplug.png",
+        "default_title": "Evil Geniuses Foundation",
+        "default_popup": "popup.html"
+},
+    "permissions": [ "storage", "tabs", "activeTab", "windows", "scripting", "background"],
+    "background": {
+        "service_worker": "background.js"
+    },
+      "web_accessible_resources": [
+        {
+          "resources": ["Dislikes.png", "Likes.png", "EFG.png"],
+          "matches": ["<all_urls>"]
+        }
+      ],
+    "host_permissions": ["https://evilgeniusfoundation-3b5e54342af3.herokuapp.com/*", "<all_urls>"]
+}
