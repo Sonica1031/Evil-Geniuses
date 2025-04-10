@@ -1,0 +1,16 @@
+#evil-forum {
+    font-family: "PoppinsMedium", "Montserrat", "Helvetica", Georgia, Arial, sans-serif;
+}
+
+#evil-forum button {
+    font-family: "PoppinsMedium", "Montserrat", "Helvetica", Georgia, Arial, sans-serif;
+}
+
+@font-face {
+    font-family: 'PoppinsMedium';
+    src: url('fonts/Poppins-Medium.woff2') format('woff2'),
+         url('fonts/Poppins-Medium.woff') format('woff'),
+         url('fonts/Poppins-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }

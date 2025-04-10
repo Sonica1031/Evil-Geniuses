@@ -3,7 +3,11 @@ h1{
     align-self: center;
 }
 body {
-    margin: 5px;
+    padding-bottom: 5px;
+    font-family: "BloggerSansMedium", "Montserrat", "Helvetica", Georgia, Arial, sans-serif;
+    width: 350px;
+    margin: 0 auto;
+    padding: 5px 10px;
 }
 
 .container{
@@ -34,4 +38,38 @@ body {
     flex-direction: column;
     justify-content: left;
     width: 100px;
+}
+
+/* Webkit-based browsers */
+::-webkit-scrollbar {
+    width: 8px; /* Width of the scrollbar */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Color of the scrollbar track */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #888; /* Color of the scrollbar thumb */
+    border-radius: 4px; /* Rounded corners for the thumb */
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Color of the scrollbar thumb on hover */
+  }
+
+
+/* Webfont: BloggerSans-Medium */
+@font-face {
+    font-family: "BloggerSansMedium";
+    src: url("../fonts/BloggerSans-Medium.eot"); /* IE9 Compat Modes */
+    src: url("../fonts/BloggerSans-Medium.eot?#iefix") format("embedded-opentype"),
+        /* IE6-IE8 */ url("../fonts/BloggerSans-Medium.woff") format("woff"),
+        /* Modern Browsers */ url("../fonts/BloggerSans-Medium.ttf")
+            format("truetype"),
+        /* Safari, Android, iOS */
+            url("../fonts/BloggerSans-Medium.svg#BloggerSans-Medium") format("svg"); /* Legacy iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
 }

@@ -3,10 +3,71 @@
     <head>
         <meta charset="utf-8">
         <title>Welcome To The Game</title>
-        <link rel="stylesheet" href="css/index.css">
+        <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+        <!-- <link rel="stylesheet" href="css/index.css"> -->
+        <link rel="stylesheet" type="text/css" href="../css/login.css">
     </head>
 <body>
-    <div class= "container">
+    <span class="backBtn">
+        <i class="fa fa-chevron-left" id="backIcon"></i>
+    </span>    
+    <h2 class="screenTitle"></h2>
+    <div class="flashScreen">
+        <header>
+            <img src="EFGplug.png" alt="Flatpilot Logo" id="logo" width="50">
+            <h1>Evil Geniuses Master</h1>
+            <div class="buttonContainer">
+                <button class="loginBtn">SIGN IN</button>
+                <button class="signUpBtn">SIGN UP</button>
+            </div>
+        </header>
+    </div>
+    <div class="loginContainer">
+        <form id="login-form">
+            <div class="lableInput">
+                <label for="email">Email</label>
+                <input type="text" id="loginEmail" name="loginEmail" placeholder="enter your email" required><br><br>
+            </div>
+            <div class="lableInput">
+                <label for="password">Password</label>
+                <input type="password" id="loginPassword" name="loginPassword" placeholder="password" required><br><br>
+            </div>
+            <p class="forgotPassword" id="forgotPassword">Forgot Password?</p>
+            <button type="submit" class="btn" id="login-btn"><i class="fa fa-spinner fa-spin" id="loginLoader"></i> LOGIN</button>
+            <div class="accountOpt">
+                <p class="dontAccount">Don't have account?</p>
+                <p class="haveAccount" id="signUpAccount">Sign Up</p>
+            </div>
+        </form>
+        <form id="signup-form">
+            <div class="lableInput">
+                <label for="firstname">First Name</label>
+                <input type="firstname" id="firstname" name="firstname" placeholder="enter your first name" required><br><br>
+            </div>
+            <div class="lableInput">
+                <label for="lastname">Last Name</label>
+                <input type="lastname" id="lastname" name="lastname" placeholder="enter your lastname" required><br><br>
+            </div>
+            <div class="lableInput">
+                <label for="email">Email</label>
+                <input type="email" id="signupEmail" name="signupEmail" placeholder="enter your email" required><br><br>
+            </div>
+            <div class="lableInput">
+                <label for="username">Username</label>
+                <input type="username" id="signupUsername" name="signupUsername" placeholder="enter your username" required><br><br>
+            </div>
+            <div class="lableInput">
+                <label for="password">Password</label>
+                <input type="password" id="signupPassword" name="signupPassword" placeholder="password" required><br><br>
+            </div>
+            <button type="submit" class="btn" id="signup-btn"><i class="fa fa-spinner fa-spin" id="signUpLoader"></i> SIGN UP</button>
+            <div class="accountOpt">
+                <p class="dontAccount">Have account?</p>
+                <p class="haveAccount" id="signInAccount">Sign In</p>
+            </div>
+        </form>
+    </div>
+    <!-- <div class= "container">
         <p class= "letters">Username</p>
         <input class= "username"></input>
         <p class= "letters">Password</p>
@@ -31,7 +92,7 @@
         <button class="registration_submit">Submit</button>
         <button class="login">Login</button>
     </div>
-    </div>
+    </div> -->
 </body>
-<script type="module" src="popup.js"></script>
+<script type="module" src="login.js"></script>
 </html>

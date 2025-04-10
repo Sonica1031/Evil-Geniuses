@@ -14,7 +14,21 @@
     },
       "web_accessible_resources": [
         {
-          "resources": ["Dislikes.png", "Likes.png", "EFG.png"],
+          "resources": [
+            "Dislikes.png", 
+            "Likes.png", 
+            "EFG.png",
+            "EFGplug.png",
+            "css/fonts.css",
+            "fonts/BloggerSans-Medium.eot",
+            "fonts/BloggerSans-Medium.woff",
+            "fonts/BloggerSans-Medium.ttf",
+            "fonts/BloggerSans-Medium.svg",
+            "fonts/Poppins-Medium.eot",
+            "fonts/Poppins-Medium.woff",
+            "fonts/Poppins-Medium.ttf",
+            "fonts/Poppins-Medium.svg"
+          ],
           "matches": ["<all_urls>"]
         }
       ],
