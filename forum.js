@@ -254,6 +254,12 @@
       paginationDiv.innerHTML = '';
       const totalPages = Math.ceil(totalTopLevelComments / commentsPerPage);
       
+      if (totalPages > 1) {
+        paginationDiv.style.display = 'flex'; // Show pagination when more than one page
+      } else {
+        paginationDiv.style.display = 'none'; // Hide if only one page or no comments
+      }
+
       const prevBtn = document.createElement('button');
       prevBtn.textContent = 'Previous';
       prevBtn.style.cssText = `

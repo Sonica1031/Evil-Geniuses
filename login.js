@@ -58,7 +58,7 @@ fsSignUpBtn.addEventListener("click", function() {
 document.getElementById("login-form").addEventListener("submit", async function (e) {
     e.preventDefault();
     document.querySelector("#loginLoader").style.display = "inline-block";
-    const email = document.getElementById("loginEmail").value;
+    const username = document.getElementById("loginUserName").value;
     const password = document.getElementById("loginPassword").value;
     e.preventDefault();
     const url = "https://evilgeniusfoundation-3b5e54342af3.herokuapp.com/api/login";
@@ -68,7 +68,7 @@ document.getElementById("login-form").addEventListener("submit", async function 
             "Content-Type" : "application/json"
         },
         body: JSON.stringify({
-            username : email,
+            username : username,
             password : password
         }),
     };
@@ -92,7 +92,7 @@ document.getElementById("login-form").addEventListener("submit", async function 
         try{
             // chrome.storage.session.set({"ID": data.id});
             // chrome.storage.session.set({"Token": data.token});
-            chrome.storage.local.set({ "ID": data.id, "Token": data.token });
+            chrome.storage.session.set({ "ID": data.id, "Token": data.token });
         }
         catch(error){
             console.log(error)
@@ -156,7 +156,7 @@ document.getElementById("signup-form").addEventListener("submit", async function
         .then(data => {
             // chrome.storage.session.set('Token', data.token)
             // chrome.storage.session.set('ID', data.ID)
-            chrome.storage.local.set({ "ID": data.id, "Token": data.token });
+            chrome.storage.session.set({ "ID": data.id, "Token": data.token });
         })
         .catch(err =>
             console.log(err));
