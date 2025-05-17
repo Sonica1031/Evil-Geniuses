@@ -157,6 +157,10 @@ header h1 {
     color: #4b494b;
 }
 
+#forgotpassword-form{
+    display: none;
+}
+
 #signup-form {
     display: none;
 }
@@ -247,6 +251,7 @@ input:focus {
 #loginLoader {
     display: none;
 }
+
 
 #signUpLoader {
   display: none;
