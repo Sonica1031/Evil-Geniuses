@@ -3,20 +3,20 @@
 // link.href = chrome.runtime.getURL("../css/fonts.css");
 // document.head.appendChild(link);
 (function() {
-  const sadEmoji = chrome.runtime.getURL('./Dislikes.png');
-  const evilEmoji = chrome.runtime.getURL('./Likes.png');
+//  const sadEmoji = chrome.runtime.getURL('./Dislikes.png');
+//  const evilEmoji = chrome.runtime.getURL('./Likes.png');
   const efgImage = chrome.runtime.getURL('./EFG.png');
 
-  const dislikes = new Image();
-  dislikes.src = sadEmoji;
-  dislikes.alt = 'Sad Emoji';
-  dislikes.onerror = () => console.error('Dislike image failed to load');
-  dislikes.onload = () => console.log('Dislike image loaded successfully');
-  const likes = new Image();
-  likes.src = evilEmoji;
-  likes.alt = 'Evil Emoji';
-  likes.onerror = () => console.error('Like image failed to load');
-  likes.onload = () => console.log('Like image loaded successfully');
+  //const dislikes = new Image();
+  //dislikes.src = sadEmoji;
+  //dislikes.alt = 'Sad Emoji';
+  // dislikes.onerror = () => console.error('Dislike image failed to load');
+  // dislikes.onload = () => console.log('Dislike image loaded successfully');
+  //const likes = new Image();
+  //likes.src = evilEmoji;
+  //likes.alt = 'Evil Emoji';
+  // likes.onerror = () => console.error('Like image failed to load');
+  // likes.onload = () => console.log('Like image loaded successfully');
   const efgImg = new Image();
   efgImg.src = efgImage;
   efgImg.alt = 'EFG Logo';
